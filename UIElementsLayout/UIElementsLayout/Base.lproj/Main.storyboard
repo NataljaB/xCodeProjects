@@ -68,24 +68,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd7-PY-53G">
-                                <rect key="frame" x="184" y="507" width="120" height="40"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="FSJ-fj-sRU"/>
-                                    <constraint firstAttribute="height" constant="40" id="hdn-yn-5p9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Right Button">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the buttons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxo-Yd-sh6">
                                 <rect key="frame" x="33" y="278" width="271" height="123"/>
                                 <color key="backgroundColor" red="0.97844912549999996" green="1" blue="0.091568289950000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,6 +92,24 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="271" id="wwD-El-1Fb"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd7-PY-53G">
+                                <rect key="frame" x="184" y="507" width="120" height="40"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="FSJ-fj-sRU"/>
+                                    <constraint firstAttribute="height" constant="40" id="hdn-yn-5p9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Right Button">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -141,6 +141,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="leftButtonDown" destination="c2d-eF-qVQ" id="iD4-1K-0Yq"/>
+                        <outlet property="leftButtonUp" destination="cGO-3C-bsr" id="8Kg-ii-sBe"/>
+                        <outlet property="mainImageView" destination="R3e-bR-fpr" id="sIl-4E-ae5"/>
+                        <outlet property="myLabel" destination="Yxo-Yd-sh6" id="11A-6n-H2D"/>
+                        <outlet property="rightButtonDown" destination="Nd7-PY-53G" id="PBI-oF-aTS"/>
+                        <outlet property="rightButtonUp" destination="YAo-3S-A5e" id="OfL-3P-MJI"/>
+                        <outletCollection property="styleOutletCollection" destination="cGO-3C-bsr" collectionClass="NSMutableArray" id="avI-Ok-VcD"/>
+                        <outletCollection property="styleOutletCollection" destination="YAo-3S-A5e" collectionClass="NSMutableArray" id="Ca4-5L-MgV"/>
+                        <outletCollection property="styleOutletCollection" destination="c2d-eF-qVQ" collectionClass="NSMutableArray" id="Z59-24-RCv"/>
+                        <outletCollection property="styleOutletCollection" destination="Nd7-PY-53G" collectionClass="NSMutableArray" id="ncv-rb-mN3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
