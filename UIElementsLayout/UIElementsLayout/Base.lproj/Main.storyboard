@@ -15,39 +15,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBi-tg-VF1">
-                                <rect key="frame" x="184" y="508" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WZ-Zp-lhw">
+                                <rect key="frame" x="388" y="333" width="328" height="40"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="MUT-SF-OJa"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="z3Q-Wv-81e"/>
-                                    <constraint firstAttribute="height" constant="40" id="zsi-wh-dbM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="328" id="a0N-jW-g7i"/>
+                                    <constraint firstAttribute="height" constant="40" id="cHh-KB-1IG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Right Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeD-jk-9m1">
-                                <rect key="frame" x="16" y="20" width="120" height="40"/>
-                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd7-PY-53G">
+                                <rect key="frame" x="184" y="508" width="120" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="Jr1-0n-d4r"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="PBs-tq-7Nl"/>
-                                    <constraint firstAttribute="width" constant="120" id="UfA-Wl-lmX"/>
-                                    <constraint firstAttribute="height" constant="40" id="fDX-bL-V5n"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="GUP-XE-rSN"/>
+                                    <constraint firstAttribute="height" constant="40" id="jpa-0K-gGD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Right Button">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2d-eF-qVQ">
+                                <rect key="frame" x="33" y="508" width="120" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="9t0-ZX-yHJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="V9q-XQ-0TY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Left Button">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGO-3C-bsr">
+                                <rect key="frame" x="33" y="438" width="120" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Ebz-TB-t8m"/>
+                                    <constraint firstAttribute="height" constant="40" id="jVf-cH-Wmc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Left Button">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAo-3S-A5e">
+                                <rect key="frame" x="184" y="438" width="120" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Hb-47-Gf2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="BxJ-tq-GtN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Right Button">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kBi-tg-VF1" secondAttribute="bottom" constant="20" id="LFx-MP-FZq"/>
-                            <constraint firstItem="kBi-tg-VF1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="OAY-rt-3iq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kBi-tg-VF1" secondAttribute="trailing" constant="16" id="pet-cN-UmG"/>
+                            <constraint firstItem="YAo-3S-A5e" firstAttribute="height" secondItem="cGO-3C-bsr" secondAttribute="height" id="1bZ-iT-Wzj"/>
+                            <constraint firstItem="Nd7-PY-53G" firstAttribute="leading" secondItem="c2d-eF-qVQ" secondAttribute="trailing" constant="31" id="67s-8b-KMV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YAo-3S-A5e" secondAttribute="trailing" constant="16" id="6du-dJ-mlc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nd7-PY-53G" secondAttribute="bottom" constant="20" id="7pd-r9-4SO"/>
+                            <constraint firstItem="Nd7-PY-53G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="D0P-r4-Lud"/>
+                            <constraint firstItem="YAo-3S-A5e" firstAttribute="width" secondItem="cGO-3C-bsr" secondAttribute="width" id="Dmj-lY-IZY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c2d-eF-qVQ" secondAttribute="bottom" constant="20" id="I1h-b6-VIa"/>
+                            <constraint firstItem="Nd7-PY-53G" firstAttribute="height" secondItem="c2d-eF-qVQ" secondAttribute="height" id="IJM-Fi-5Ev"/>
+                            <constraint firstItem="Nd7-PY-53G" firstAttribute="width" secondItem="c2d-eF-qVQ" secondAttribute="width" id="Kfu-zf-13C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nd7-PY-53G" secondAttribute="trailing" constant="16" id="SUN-dz-Kjs"/>
+                            <constraint firstItem="c2d-eF-qVQ" firstAttribute="top" secondItem="cGO-3C-bsr" secondAttribute="bottom" constant="30" id="X07-HT-wdz"/>
+                            <constraint firstItem="Nd7-PY-53G" firstAttribute="top" secondItem="YAo-3S-A5e" secondAttribute="bottom" constant="30" id="fVn-Ia-KWf"/>
+                            <constraint firstItem="cGO-3C-bsr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="g4c-ee-JvG"/>
+                            <constraint firstItem="2WZ-Zp-lhw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pSn-gM-jUM"/>
+                            <constraint firstItem="2WZ-Zp-lhw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="333" id="pnN-QD-FNb"/>
+                            <constraint firstAttribute="trailing" secondItem="2WZ-Zp-lhw" secondAttribute="trailing" constant="-396" id="pwk-4q-eOc"/>
+                            <constraint firstItem="YAo-3S-A5e" firstAttribute="leading" secondItem="cGO-3C-bsr" secondAttribute="trailing" constant="31" id="qGf-o7-pYz"/>
+                            <constraint firstItem="c2d-eF-qVQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="u5g-xe-s5W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
