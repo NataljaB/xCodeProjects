@@ -55,12 +55,24 @@ class ViewController: UIViewController {
         
     }
     
+    func changeAnotherButtonImage(with image: String){
+        rightButtonUp.setImage(UIImage(named: "star.png"), for: .normal)
+        rightButtonUp.tintColor = .white
+        rightButtonUp.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
+        self.view.backgroundColor = UIColor.black
+    }
+    func changeAnotherTextLabel(){
+    
     //MARK:- IBAction for three more buttons
-    @IBAction func touchDragOutsideTapped(_ sender: Any) {
+     @IBAction func touchDragOutsideTapped(_ sender: Any) {
         print("touchDragOutsideTapped")
         changeButtonImage(with: "home.png")
     }
     
+     @IBAction func touchUpInsideTapped(_ sender: Any) {
+        print("touchUpInsideTapped")
+        changeButtonImage(with: "star.png")    }
     
     
+}
 }
