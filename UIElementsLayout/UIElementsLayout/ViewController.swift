@@ -51,28 +51,56 @@ class ViewController: UIViewController {
         leftButtonUp.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
         self.view.backgroundColor = UIColor.black
     }
+    
+    func changeSecondButtonImage(with image: String){
+    rightButtonUp.setImage(UIImage(named: "star.png"), for: .normal)
+    rightButtonUp.tintColor = .white
+    rightButtonUp.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
+    self.view.backgroundColor = UIColor.black
+        
+    func changeThirdButtonImage(with image: String){
+    rightButtonDown.setImage(UIImage(named: "star.png"), for: .normal)
+    rightButtonDown.tintColor = .white
+    rightButtonDown.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
+        self.view.backgroundColor = UIColor.black
+        
+    func changeFourthButtonImage(with image: String){
+    leftButtonDown.setImage(UIImage(named: "home.png"), for: .normal)
+    leftButtonDown.tintColor = .white
+    leftButtonDown.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
+            self.view.backgroundColor = UIColor.black
+        
     func changeTextLabel(){
         
     }
-    
-    func changeAnotherButtonImage(with image: String){
-        rightButtonUp.setImage(UIImage(named: "star.png"), for: .normal)
-        rightButtonUp.tintColor = .white
-        rightButtonUp.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
-        self.view.backgroundColor = UIColor.black
-    }
-    func changeAnotherTextLabel(){
+
     
     //MARK:- IBAction for three more buttons
-     @IBAction func touchDragOutsideTapped(_ sender: Any) {
-        print("touchDragOutsideTapped")
+    
+    @IBAction func touchDragOutsideTapped(_ sender: Any) {
+        print(touchDragOutsideTapped)
         changeButtonImage(with: "home.png")
     }
     
-     @IBAction func touchUpInsideTapped(_ sender: Any) {
-        print("touchUpInsideTapped")
-        changeButtonImage(with: "star.png")    }
+    }
     
+    @IBAction func touchUpInsideTapped(_ sender: Any) {
+        print(touchUpInsideTapped)
+        changeButtonImage(with: "star.png")
+        
+    }
     
+    @IBAction func touchDownTapped(_ sender: Any) {
+        print("touchDownTapped")
+        changeButtonImage(with: "star.png")
+    }
 }
+    @IBAction func touchUpOutsideTapped(_ sender: Any) {
+        print("touchUpOutsideTapped")
+        changeButtonImage(with: "home.png")
+        
+}
+
+
+
 }
