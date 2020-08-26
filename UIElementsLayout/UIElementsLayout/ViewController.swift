@@ -52,25 +52,11 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.black
     }
     
-    func changeSecondButtonImage(with image: String){
-    rightButtonUp.setImage(UIImage(named: "star.png"), for: .normal)
-    rightButtonUp.tintColor = .white
-    rightButtonUp.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
-    self.view.backgroundColor = UIColor.black
-        
-    func changeThirdButtonImage(with image: String){
-    rightButtonDown.setImage(UIImage(named: "star.png"), for: .normal)
-    rightButtonDown.tintColor = .white
-    rightButtonDown.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
-        self.view.backgroundColor = UIColor.black
-        
-    func changeFourthButtonImage(with image: String){
-    leftButtonDown.setImage(UIImage(named: "home.png"), for: .normal)
-    leftButtonDown.tintColor = .white
-    leftButtonDown.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
-            self.view.backgroundColor = UIColor.black
-        
-    func changeTextLabel(){
+    func changeTextLabel(with message: String){
+        let text = message
+        myLabel.text = text
+        myLabel.backgroundColor = UIColor.gray
+        mainImageView.image = UIImage(systemName: "mic")
         
     }
 
@@ -82,25 +68,8 @@ class ViewController: UIViewController {
         changeButtonImage(with: "home.png")
     }
     
-    }
-    
-    @IBAction func touchUpInsideTapped(_ sender: Any) {
-        print(touchUpInsideTapped)
-        changeButtonImage(with: "star.png")
-        
-    }
-    
-    @IBAction func touchDownTapped(_ sender: Any) {
-        print("touchDownTapped")
-        changeButtonImage(with: "star.png")
+    @IBAction func leftBottomButtonTapped(_ sender: Any) {
+        changeTextLabel(with: "leftBottomButtonTapped")
     }
 }
-    @IBAction func touchUpOutsideTapped(_ sender: Any) {
-        print("touchUpOutsideTapped")
-        changeButtonImage(with: "home.png")
-        
-}
 
-
-
-}

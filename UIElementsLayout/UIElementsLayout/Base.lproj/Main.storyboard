@@ -28,6 +28,7 @@
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="leftBottomButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coF-F3-XaM"/>
                                     <action selector="touchUpOutsideTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVk-25-7uO"/>
                                 </connections>
                             </button>
